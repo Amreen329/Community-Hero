@@ -1,0 +1,72 @@
+{
+  "collections": {
+    "users": {
+      "schema": {
+        "id": "string",
+        "email": "string",
+        "name": "string",
+        "role": "string",
+        "points": "number",
+        "badges": "array",
+        "createdAt": "timestamp"
+      }
+    },
+    "complaints": {
+      "schema": {
+        "id": "string",
+        "reporterId": "string",
+        "reporterName": "string",
+        "title": "string",
+        "description": "string",
+        "category": "string",
+        "severity": "string",
+        "gpsLocation": {
+          "lat": "number",
+          "lng": "number",
+          "address": "string"
+        },
+        "imageUrl": "string",
+        "status": "string",
+        "upvotesCount": "number",
+        "commentsCount": "number",
+        "priorityLevel": "string",
+        "aiReasoning": "string",
+        "departmentAssigned": "string",
+        "createdAt": "timestamp",
+        "resolvedAt": "timestamp",
+        "resolvedEvidenceUrl": "string",
+        "verifiedBy": "array"
+      }
+    },
+    "comments": {
+      "schema": {
+        "id": "string",
+        "complaintId": "string",
+        "authorId": "string",
+        "authorName": "string",
+        "authorRole": "string",
+        "text": "string",
+        "evidenceUrl": "string",
+        "createdAt": "timestamp"
+      }
+    },
+    "votes": {
+      "schema": {
+        "id": "string",
+        "userId": "string",
+        "complaintId": "string",
+        "voteType": "string",
+        "createdAt": "timestamp"
+      }
+    },
+    "notifications": {
+      "schema": {
+        "id": "string",
+        "userId": "string",
+        "text": "string",
+        "isRead": "boolean",
+        "createdAt": "timestamp"
+      }
+    }
+  }
+}

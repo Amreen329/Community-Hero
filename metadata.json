@@ -1,0 +1,6 @@
+{
+  "name": "Community Hero",
+  "description": "An AI-powered hyperlocal civic problem solver allowing citizens, volunteers, and admins to collaborate, verify, prioritize, and track community issues in real-time.",
+  "requestFramePermissions": ["geolocation", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
